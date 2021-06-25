@@ -44,7 +44,7 @@ function formInputValidation() {
 
   emailInput.addEventListener("blur", () => {
     if (emailInput.value == "" && !emailInput.value.includes("@")) {
-      errorMsg2.innerHTML = ` <span id = error-logo><i class="fa fa-exclamation-triangle"></i></span>Is Not A Valid Email`;
+      errorMsg2.innerHTML = ` <span id = error-logo><i class="fa fa-exclamation-triangle"></i></span> Is Not A Valid Email`;
       errorMsg2.classList.add("error-class");
       emailInput.classList.add("error-border");
     } else {
