@@ -94,7 +94,7 @@ img {
 }
 
 .input-group small {
-  margin: 0px 9px;
+  /* margin: 0px 9px; */
   margin-bottom: 45px;
   text-transform: capitalize;
 }
@@ -217,11 +217,11 @@ button {
 }
 
 #facebook-img {
-  width: 8%;
+  width: 5%;
   margin-right: 10px;
 }
 #google-img {
-  width: 13%;
+  width: 8%;
   margin-right: 5px;
 }
 .social-btn {
@@ -296,7 +296,17 @@ button {
   #googleBtn {
     display: block;
     margin: 13px auto;
-    width: 50%;
+    width: 60%;
+  }
+
+  #input-group {
+    margin: 0px;
+    padding: 0px 10px;
+  }
+
+  .form-wrapper {
+    height: 880px;
+    padding: 5px 5px;
   }
 
   form {
@@ -306,7 +316,7 @@ button {
   #facebookBtn {
     display: block;
     margin: 13px auto;
-    width: 50%;
+    width: 60%;
   }
 
   .box2 {

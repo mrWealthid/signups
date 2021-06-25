@@ -57,7 +57,7 @@ img {
 .box2 {
   width: 65%;
   background: white;
-  height: 594px;
+  height: 610px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   overflow: hidden;
   margin: 55px 136px 69px 137px;
@@ -227,6 +227,7 @@ button {
   margin: 7px auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #checker {
@@ -234,11 +235,11 @@ button {
 }
 
 #facebook-img {
-  width: 8%;
+  width: 5%;
   margin-right: 10px;
 }
 #google-img {
-  width: 13%;
+  width: 8%;
   margin-right: 5px;
 }
 
