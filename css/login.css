@@ -57,10 +57,10 @@ img {
 .box2 {
   width: 65%;
   background: white;
-  height: 610px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 550px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   overflow: hidden;
-  margin: 55px 136px 69px 137px;
+  margin: 35px;
   border-radius: 15px 15px;
   position: relative;
 }
@@ -105,7 +105,7 @@ form {
 .form-img {
   flex-basis: 39%;
   text-align: center;
-  background: var(--image-filter) url("../images/Rectangle 5.png");
+  background: var(--image-filter) url("../Assets/Rectangle-5.png");
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
@@ -213,7 +213,7 @@ button {
 }
 
 #checkbox {
-  width: 12px;
+  width: 2rem;
   margin-right: 5px;
 }
 
@@ -314,5 +314,6 @@ button {
   }
   .box2 {
     margin: 1.5rem;
+    height: 660px;
   }
 }

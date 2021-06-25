@@ -38,7 +38,7 @@ body {
 main {
   display: flex;
   height: 100%;
-  background: var(--light-blue);
+  background: white;
   box-shadow: 2px 4px 5px gray;
 }
 
@@ -63,7 +63,7 @@ img {
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   overflow: hidden;
-  margin: 66px 136px 88px 137px;
+  margin: 40px;
   width: 70%;
 }
 
@@ -116,7 +116,7 @@ form {
 .form-img {
   flex-basis: 39%;
   text-align: center;
-  background: var(--image-filter) url("../images/Rectangle-5.png");
+  background: var(--image-filter) url("../Assets/Rectangle-5.png");
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
@@ -291,7 +291,7 @@ button {
   }
 
   .form-wrapper h2 {
-    padding-top: 10px;
+    padding-top: 15px;
   }
 }
 
@@ -321,7 +321,7 @@ button {
   }
 
   .form-wrapper {
-    height: 850px;
+    height: 880px;
     padding: 5px 5px;
   }
   .box2 {

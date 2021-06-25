@@ -38,7 +38,7 @@ body {
 main {
   display: flex;
   height: 100%;
-  background: var(--light-blue);
+  background: white;
   box-shadow: 2px 4px 5px gray;
 }
 
@@ -63,7 +63,7 @@ img {
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   overflow: hidden;
-  margin: 66px 136px 32px 137px;
+  margin: 40px;
   width: 70%;
 }
 
@@ -117,7 +117,7 @@ form {
   flex-basis: 39%;
   text-align: center;
   height: 594px;
-  background: var(--image-filter) url("../images/left-side.png");
+  background: var(--image-filter) url("../Assets/left-side.png");
   background-size: 465px 660px;
   position: relative;
   background-position: -24px -30px;
@@ -305,7 +305,7 @@ button {
   }
 
   .form-wrapper {
-    height: 880px;
+    height: 890px;
     padding: 5px 5px;
   }
 
@@ -321,5 +321,6 @@ button {
 
   .box2 {
     margin: 1.5rem;
+    height: 890px;
   }
 }
