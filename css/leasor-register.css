@@ -256,6 +256,11 @@ button {
   display: block;
 }
 
+#error-logo {
+  padding: 0px 5px;
+  color: var(--error-border);
+}
+
 @media (max-width: 830px) {
   .form-img {
     display: none;
