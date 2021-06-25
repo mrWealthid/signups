@@ -30,16 +30,13 @@ function formInputValidation() {
   });
 
   passwordInput.addEventListener("blur", () => {
-    if (passwordInput.value == "" || passwordInput.value.length <= 8) {
+    if (passwordInput.value == "" || passwordInput.value.length < 8) {
       errorMsg1.innerHTML = `<span id = error-logo ><i class="fa fa-exclamation-triangle"></i></span> Password Must Contain At Least Eight Characters`;
 
       errorMsg1.classList.add("error-class");
       passwordInput.classList.add("error-border");
-    } else if (
-      nameInput.value == passwordInput.value ||
-      emailInput.value == passwordInput.value
-    ) {
-      errorMsg1.innerHTML = `<span id = error-logo ><i class="fa fa-exclamation-triangle"></i></span> Password Cannot Be Your Name Or Email Address`;
+    } else if (emailInput.value == passwordInput.value) {
+      errorMsg1.innerHTML = `<span id = error-logo ><i class="fa fa-exclamation-triangle"></i></span> Password Cannot Be Your Email Address`;
     } else {
       errorMsg1.remove();
       passwordInput.classList.remove("error-border");

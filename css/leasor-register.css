@@ -7,11 +7,6 @@
   box-sizing: border-box;
 }
 
-a {
-  color: var(--Primary-blue);
-}
-
-/* --button-border:  */
 :root {
   --Primary-blue: #2a75c0;
   --Deep-blue: #3b5998;
@@ -31,15 +26,29 @@ a {
   --error-border: rgba(203, 15, 15, 1);
 }
 
+a {
+  color: var(--Primary-blue);
+}
+
 body {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: var(--light-blue);
   font-family: "Poppins", sans-serif;
   letter-spacing: var(--letter-spacing);
 }
 main {
   display: flex;
-  height: 100%;
+
   background: white;
-  box-shadow: 2px 4px 5px gray;
+  box-shadow: 2px 4px 5px grey;
+  width: 75%;
+  margin: 27px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 small {
@@ -50,29 +59,12 @@ img {
   width: 50%;
 }
 
-.box {
-  display: flex;
-  width: 100%;
-  background: var(--light-blue);
-  height: 100%;
-
-  justify-content: center;
-}
-
-.box2 {
-  border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-  overflow: hidden;
-  margin: 40px;
-  width: 70%;
-}
-
 .form-wrapper {
   flex-basis: 61%;
   padding-left: 5px;
   background: white;
-  padding-top: 14px;
-  height: 850px;
+
+  margin-bottom: 100px;
   position: relative;
 }
 
@@ -116,12 +108,10 @@ form {
 .form-img {
   flex-basis: 39%;
   text-align: center;
-  height: 594px;
-  background: var(--image-filter) url("../Assets/left-side.png");
-  background-size: 465px 660px;
+  background: var(--image-filter) url(../Assets/left-side.png);
+  background-size: 466px 1000px;
   position: relative;
-  background-position: -24px -30px;
-
+  background-position: -24px -52px;
   overflow: hidden;
   background-repeat: no-repeat;
 }
@@ -268,7 +258,6 @@ button {
 
   .form-wrapper {
     flex-basis: 100%;
-    padding-top: 40px;
     padding-left: 5px;
   }
 
@@ -282,10 +271,6 @@ button {
   #facebookBtn {
     width: 150px;
     padding: 5px 20px;
-  }
-
-  .form-wrapper h2 {
-    padding-top: 10px;
   }
 }
 
@@ -304,11 +289,6 @@ button {
     padding: 0px 10px;
   }
 
-  .form-wrapper {
-    height: 890px;
-    padding: 5px 5px;
-  }
-
   form {
     padding: 0px;
   }
@@ -318,10 +298,7 @@ button {
     margin: 13px auto;
     width: 60%;
   }
-
-  .box2 {
-    margin: 1.5rem;
-    height: 890px;
+  main {
     width: 90%;
   }
 }

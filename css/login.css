@@ -7,11 +7,6 @@
   box-sizing: border-box;
 }
 
-a {
-  color: var(--Primary-blue);
-}
-
-/* --button-border:  */
 :root {
   --Primary-blue: #2a75c0;
   --Deep-blue: #3b5998;
@@ -30,14 +25,29 @@ a {
   --error-msg: rgba(253, 236, 236, 1);
   --error-border: rgba(203, 15, 15, 1);
 }
+a {
+  color: var(--Primary-blue);
+}
 
 body {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: var(--light-blue);
   font-family: "Poppins", sans-serif;
   letter-spacing: var(--letter-spacing);
 }
 main {
   display: flex;
-  height: 100%;
+  background: white;
+  box-shadow: 2px 4px 5px grey;
+  width: 70%;
+  margin: 40px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  position: relative;
 }
 
 small {
@@ -47,34 +57,12 @@ img {
   width: 50%;
 }
 
-.box {
-  width: 100vw;
-  background: var(--light-blue);
-  display: flex;
-  justify-content: center;
-}
-
-.box2 {
-  width: 65%;
-  background: white;
-  height: 550px;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-  overflow: hidden;
-  margin: 35px;
-  border-radius: 15px 15px;
-  position: relative;
-}
-
-/* span {
-  font-size: var(--small-text);
-} */
-
 label {
   display: block;
 }
 .form-wrapper {
   flex-basis: 61%;
-  margin-top: 50px;
+  margin: 40px 0px;
   padding-left: 5px;
 }
 
@@ -312,9 +300,8 @@ button {
     margin: 10px auto;
     width: 50%;
   }
-  .box2 {
-    margin: 1.5rem;
-    height: 660px;
+
+  main {
     width: 90%;
   }
 }

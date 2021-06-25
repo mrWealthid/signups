@@ -7,11 +7,6 @@
   box-sizing: border-box;
 }
 
-a {
-  color: var(--Primary-blue);
-}
-
-/* --button-border:  */
 :root {
   --Primary-blue: #2a75c0;
   --Deep-blue: #3b5998;
@@ -31,15 +26,29 @@ a {
   --error-border: rgba(203, 15, 15, 1);
 }
 
+a {
+  color: var(--Primary-blue);
+}
+
 body {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: var(--light-blue);
   font-family: "Poppins", sans-serif;
   letter-spacing: var(--letter-spacing);
 }
 main {
   display: flex;
-  height: 100%;
+
   background: white;
-  box-shadow: 2px 4px 5px gray;
+  box-shadow: 2px 4px 5px grey;
+  width: 75%;
+  margin: 27px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 small {
@@ -52,49 +61,28 @@ img {
 
 .box {
   display: flex;
-  background: var(--light-blue);
+
   width: 100%;
   height: 100%;
 
   justify-content: center;
 }
 
-.box2 {
-  border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-  overflow: hidden;
-  margin: 40px;
-  width: 70%;
-}
-
 .form-wrapper {
   flex-basis: 61%;
   padding-left: 5px;
   background: white;
-  padding-top: 14px;
-  height: 800px;
+
+  margin-bottom: 100px;
   position: relative;
 }
 
 .form-wrapper h2 {
   font-size: var(--heading);
   text-align: center;
-  padding-top: 39px;
 }
 
-/* .form-wrapper h2:after {
-  content: " As a Lessor";
-  display: block;
-  font-weight: 500;
-  margin-top: 3px;
-  font-size: var(--smallest-text);
-  transform: translateX(16px);
-  color: var(--Primary-blue);
-  text-transform: lowercase;
-} */
-
 .input-group small {
-  /* margin: 0px 9px; */
   margin-bottom: 45px;
   text-transform: capitalize;
 }
@@ -109,7 +97,6 @@ img {
 }
 form {
   margin-top: 5px;
-
   padding: 1px 25px;
 }
 
@@ -120,8 +107,6 @@ form {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
-  height: 584px;
-  display: flex;
 }
 
 .form-img:before {
@@ -274,7 +259,7 @@ button {
 
   .form-wrapper {
     flex-basis: 100%;
-    padding-top: 40px;
+    padding-top: 50px;
     padding-left: 5px;
   }
 
@@ -288,10 +273,6 @@ button {
   #facebookBtn {
     width: 150px;
     padding: 5px 20px;
-  }
-
-  .form-wrapper h2 {
-    padding-top: 15px;
   }
 }
 
@@ -320,12 +301,7 @@ button {
     padding: 0px 10px;
   }
 
-  .form-wrapper {
-    height: 880px;
-    padding: 5px 5px;
-  }
-  .box2 {
-    margin: 1.5rem;
+  main {
     width: 90%;
   }
 }
