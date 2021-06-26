@@ -42,7 +42,7 @@ main {
   background: white;
   box-shadow: 2px 4px 5px grey;
   width: 70%;
-  margin: 40px auto;
+  margin: 10vh auto;
   border-radius: 10px;
   overflow: hidden;
   border-radius: 20px;
@@ -62,7 +62,7 @@ label {
 }
 .form-wrapper {
   flex-basis: 61%;
-  margin: 40px 0px;
+  margin: 50px 0px;
   padding-left: 5px;
 }
 
